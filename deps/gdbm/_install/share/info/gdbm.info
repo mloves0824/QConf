@@ -1,4 +1,4 @@
-This is gdbm.info, produced by makeinfo version 5.1 from gdbm.texinfo.
+This is gdbm.info, produced by makeinfo version 5.2 from gdbm.texinfo.
 
 Published by the Free Software Foundation, 51 Franklin Street, Fifth
 Floor Boston, MA 02110-1301, USA
@@ -2941,6 +2941,6 @@ Node: Exit codes78080
 Node: Bugs78628
 Node: Resources79980
 Node: GNU Free Documentation License80699
-Node: Index105851
+Node: Index105852
 
 End Tag Table

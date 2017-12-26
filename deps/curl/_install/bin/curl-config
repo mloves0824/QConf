@@ -21,7 +21,7 @@
 #
 ###########################################################################
 
-prefix=/home/messi/workspace/git/QConf/agent/../deps/curl/_install
+prefix=/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=
@@ -71,7 +71,7 @@ while test $# -gt 0; do
         ;;
 
     --ca)
-        echo ""/etc/pki/tls/certs/ca-bundle.crt""
+        echo ""/etc/ssl/certs/ca-certificates.crt""
         ;;
 
     --cc)
@@ -164,7 +164,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--prefix=/home/messi/workspace/git/QConf/agent/../deps/curl/_install' '--disable-ldap' '--disable-ldaps' '--without-ssl' '--without-zlib' '--without-libidn' '--without-librtmp'"
+        echo " '--prefix=/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install' '--disable-ldap' '--disable-ldaps' '--without-ssl' '--without-zlib' '--without-libidn' '--without-librtmp'"
         ;;
 
     *)

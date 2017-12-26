@@ -1,9 +1,9 @@
 # Directories...
-$prefix=/home/messi/workspace/git/QConf/agent/../deps/curl/_install
+$prefix=/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install
 $exec_prefix=${prefix}
 $bindir=${exec_prefix}/bin
 $confdir=${prefix}/etc
-$docdir=/home/messi/workspace/git/QConf/agent/../deps/curl/_install/doc
+$docdir=/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install/doc
 $mandir=${datarootdir}/man
 $libdir=${exec_prefix}/lib
 $srcdir=../..

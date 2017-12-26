@@ -2,7 +2,7 @@
 /* lib/curl_config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Location of default ca bundle */
-#define CURL_CA_BUNDLE "/etc/pki/tls/certs/ca-bundle.crt"
+#define CURL_CA_BUNDLE "/etc/ssl/certs/ca-certificates.crt"
 
 /* Location of default ca path */
 /* #undef CURL_CA_PATH */
@@ -65,7 +65,7 @@
 /* #undef CURL_DISABLE_VERBOSE_STRINGS */
 
 /* Definition to make a library symbol externally visible. */
-/* #undef CURL_EXTERN_SYMBOL */
+#define CURL_EXTERN_SYMBOL __attribute__ ((__visibility__ ("default")))
 
 /* Use Windows LDAP implementation */
 /* #undef CURL_LDAP_WIN */
@@ -658,7 +658,7 @@
 /* #undef HAVE_STRNICMP */
 
 /* Define to 1 if you have the <stropts.h> header file. */
-/* #undef HAVE_STROPTS_H */
+#define HAVE_STROPTS_H 1
 
 /* Define to 1 if you have the strstr function. */
 #define HAVE_STRSTR 1

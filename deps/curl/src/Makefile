@@ -273,28 +273,28 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} "/home/messi/workspace/git/QConf/deps/curl/missing" --run aclocal-1.14
+ACLOCAL = ${SHELL} "/home/chenb/workspace/sde1/project/QConf/deps/curl/missing" --run aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AR = /bin/ar
+AR = /usr/bin/ar
 AS = as
-AUTOCONF = ${SHELL} "/home/messi/workspace/git/QConf/deps/curl/missing" --run autoconf
-AUTOHEADER = ${SHELL} "/home/messi/workspace/git/QConf/deps/curl/missing" --run autoheader
-AUTOMAKE = ${SHELL} "/home/messi/workspace/git/QConf/deps/curl/missing" --run automake-1.14
-AWK = gawk
+AUTOCONF = ${SHELL} "/home/chenb/workspace/sde1/project/QConf/deps/curl/missing" --run autoconf
+AUTOHEADER = ${SHELL} "/home/chenb/workspace/sde1/project/QConf/deps/curl/missing" --run autoheader
+AUTOMAKE = ${SHELL} "/home/chenb/workspace/sde1/project/QConf/deps/curl/missing" --run automake-1.14
+AWK = mawk
 BLANK_AT_MAKETIME = 
 CC = gcc
 CCDEPMODE = depmode=gcc3
 
 # This might hold -Werror
 CFLAGS = -O2 -Wno-system-headers 
-CFLAG_CURL_SYMBOL_HIDING = 
-CONFIGURE_OPTIONS = " '--prefix=/home/messi/workspace/git/QConf/agent/../deps/curl/_install' '--disable-ldap' '--disable-ldaps' '--without-ssl' '--without-zlib' '--without-libidn' '--without-librtmp'"
+CFLAG_CURL_SYMBOL_HIDING = -fvisibility=hidden
+CONFIGURE_OPTIONS = " '--prefix=/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install' '--disable-ldap' '--disable-ldaps' '--without-ssl' '--without-zlib' '--without-libidn' '--without-librtmp'"
 CPP = gcc -E
 CPPFLAGS = 
 CPPFLAG_CURL_STATICLIB = 
 CURLVERSION = 7.37.1
-CURL_CA_BUNDLE = "/etc/pki/tls/certs/ca-bundle.crt"
+CURL_CA_BUNDLE = "/etc/ssl/certs/ca-certificates.crt"
 CURL_CFLAG_EXTRAS = 
 CURL_DISABLE_DICT = 
 CURL_DISABLE_FILE = 
@@ -333,13 +333,13 @@ HAVE_LDAP_SSL =
 HAVE_LIBZ = 
 HAVE_SSLEAY_SRP = 
 IDN_ENABLED = 
-INSTALL = /bin/install -c
+INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 IPV6_ENABLED = 1
-LD = /bin/ld -m elf_x86_64
+LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBCURL_LIBS = 
 LIBMETALINK_CPPFLAGS = 
@@ -354,15 +354,15 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} "/home/messi/workspace/git/QConf/deps/curl/missing" --run makeinfo
+MAKEINFO = ${SHELL} "/home/chenb/workspace/sde1/project/QConf/deps/curl/missing" --run makeinfo
 MANIFEST_TOOL = :
 MANOPT = -man
 MKDIR_P = /bin/mkdir -p
-NM = /bin/nm -B
+NM = /usr/bin/nm -B
 NMEDIT = 
 # Use the C locale to ensure that only ASCII characters appear in the
 # embedded text.
-NROFF = env LC_ALL=C /bin/gnroff -man # figured out by the configure script
+NROFF = env LC_ALL=C /usr/bin/nroff -man # figured out by the configure script
 OBJDUMP = objdump
 OBJEXT = o
 OTOOL = 
@@ -375,7 +375,7 @@ PACKAGE_TARNAME = curl
 PACKAGE_URL = 
 PACKAGE_VERSION = -
 PATH_SEPARATOR = :
-PERL = /bin/perl
+PERL = /usr/bin/perl
 PKGADD_NAME = cURL - a client that groks URLs
 PKGADD_PKG = HAXXcurl
 PKGADD_VENDOR = curl.haxx.se
@@ -385,7 +385,7 @@ RANLIB = ranlib
 REQUIRE_LIB_DEPS = no
 SED = /bin/sed
 SET_MAKE = 
-SHELL = /bin/sh
+SHELL = /bin/bash
 SSL_ENABLED = 
 STRIP = strip
 SUPPORT_FEATURES = IPv6
@@ -408,10 +408,10 @@ USE_WINDOWS_SSPI =
 VERSION = -
 VERSIONNUM = 072501
 ZLIB_LIBS = 
-abs_builddir = /home/messi/workspace/git/QConf/deps/curl/src
-abs_srcdir = /home/messi/workspace/git/QConf/deps/curl/src
-abs_top_builddir = /home/messi/workspace/git/QConf/deps/curl
-abs_top_srcdir = /home/messi/workspace/git/QConf/deps/curl
+abs_builddir = /home/chenb/workspace/sde1/project/QConf/deps/curl/src
+abs_srcdir = /home/chenb/workspace/sde1/project/QConf/deps/curl/src
+abs_top_builddir = /home/chenb/workspace/sde1/project/QConf/deps/curl
+abs_top_srcdir = /home/chenb/workspace/sde1/project/QConf/deps/curl
 ac_ct_AR = 
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -440,7 +440,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/messi/workspace/git/QConf/deps/curl/install-sh
+install_sh = ${SHELL} /home/chenb/workspace/sde1/project/QConf/deps/curl/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 libext = a
@@ -450,7 +450,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/messi/workspace/git/QConf/agent/../deps/curl/_install
+prefix = /home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -2214,7 +2214,7 @@ $(HUGE): $(README) $(MANPAGE)  mkhelp.pl
 # ignore tool_hugehelp.c since it is generated source code and it plays
 # by slightly different rules!
 checksrc:
-	@/bin/perl $(top_srcdir)/lib/checksrc.pl -D$(top_srcdir)/src -Wtool_hugehelp.c $(CURL_CFILES) $(CURL_HFILES)
+	@/usr/bin/perl $(top_srcdir)/lib/checksrc.pl -D$(top_srcdir)/src -Wtool_hugehelp.c $(CURL_CFILES) $(CURL_HFILES)
 
 # for debug builds, we scan the sources on all regular make invokes
 #all-local: checksrc

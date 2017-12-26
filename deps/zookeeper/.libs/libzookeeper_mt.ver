@@ -120,6 +120,7 @@ zoo_get_acl;
 zoo_get_children;
 zoo_get_children2;
 zoo_get_context;
+zoo_htonll;
 zoo_lock_auth;
 zoo_multi;
 zoo_recv_timeout;

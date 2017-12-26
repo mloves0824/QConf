@@ -23,7 +23,7 @@
 # This should most probably benefit from getting a "Requires:" field added
 # dynamically by configure.
 #
-prefix=/home/messi/workspace/git/QConf/agent/../deps/curl/_install
+prefix=/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

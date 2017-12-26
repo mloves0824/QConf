@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/messi/workspace/git/QConf/agent/../deps/curl/_install/lib'
+libdir='/home/chenb/workspace/sde1/project/QConf/agent/../deps/curl/_install/lib'
